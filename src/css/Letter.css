@@ -1,12 +1,20 @@
 @keyframes unwrapLetter {
   0% {
-    opacity: 0;
-    transform: translateY(50vh);
+    transform: translateY(20vh);
   }
 
   100% {
-    opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes revealLetter {
+  0% {
+    clip-path: inset(0 0 75% 0);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
   }
 }
 
@@ -19,11 +27,20 @@
   aspect-ratio: 1/1.4;
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+  clip-path: inset(0 0 75% 0);
 
   &.opened {
     animation-name: unwrapLetter;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  &.revealed {
+    animation-name: revealLetter;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
   }
 
   .prompt {
