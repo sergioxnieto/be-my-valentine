@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Caveat Variable';
+  src: local('Caveat Variable'), url('../../public/Caveat-VariableFont_wght.ttf') format('truetype');
+}
+
+@keyframes openEnvelope {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(50vh);
+  }
+}
+
+.envelope {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 85vw;
+  aspect-ratio: 1.4/1;
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 0.5rem;
+  position: absolute;
+  opacity: 1;
+  will-change: transform, opacity;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+
+  &.opened {
+    animation-name: openEnvelope;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  .postage {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    top: 0.25rem;
+    right: 0.5rem;
+  }
+
+  .opening {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Caveat Variable;
+  }
+}

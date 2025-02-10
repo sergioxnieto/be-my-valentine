@@ -1,0 +1,41 @@
+@keyframes unwrapLetter {
+  0% {
+    opacity: 0;
+    transform: translateY(50vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.letter {
+  display: flex;
+  flex-direction: column;
+  background: #ffb6c1;
+  width: 70vw;
+  aspect-ratio: 1/1.4;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+  /* animation-name: unwrapLetter;
+  animation-duration: 2s;
+  animation-fill-mode: forwards; */
+
+  .prompt {
+    font-size: 2.25rem;
+    font-weight: 900;
+    padding: 0 1.5rem;
+    color: #e74c3c
+  }
+
+  .buttons {
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
