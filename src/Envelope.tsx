@@ -2,14 +2,17 @@ import React from 'react';
 import './css/Envelope.css';
 
 function Envelope({
-  isClicked = false,
-  setIsClicked
+  setIsEnvelopeClicked,
+  isLetterOpened = false,
 }: {
-  isClicked?: boolean
-  setIsClicked: React.Dispatch<React.SetStateAction<boolean>>
+  setIsEnvelopeClicked: React.Dispatch<React.SetStateAction<boolean>>
+  isLetterOpened: boolean
 }) {
   return (
-    <div className={`envelope ${isClicked ? 'opened' : ''}`} onClick={() => { setIsClicked(true) }} onAnimationEnd={() => { console.log('hi') }}>
+    <div
+      className={`envelope ${isLetterOpened ? 'opened' : ''}`}
+      onClick={() => { setIsEnvelopeClicked(true) }}
+    >
       <img className="postage" src="valentines-postage-stamp.png" alt="Valentines themed postage stamp" />
 
       <span className="opening">For Sarah</span>
