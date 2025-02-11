@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/be-my-valentine/static/css/main.2afe55e5.css",
+    "main.js": "/be-my-valentine/static/js/main.79963d2d.js",
+    "static/js/453.1092cb32.chunk.js": "/be-my-valentine/static/js/453.1092cb32.chunk.js",
+    "static/media/Caveat-VariableFont_wght.ttf": "/be-my-valentine/static/media/Caveat-VariableFont_wght.31f0a02d84d42627c894.ttf",
+    "index.html": "/be-my-valentine/index.html",
+    "main.2afe55e5.css.map": "/be-my-valentine/static/css/main.2afe55e5.css.map",
+    "main.79963d2d.js.map": "/be-my-valentine/static/js/main.79963d2d.js.map",
+    "453.1092cb32.chunk.js.map": "/be-my-valentine/static/js/453.1092cb32.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2afe55e5.css",
+    "static/js/main.79963d2d.js"
+  ]
+}
