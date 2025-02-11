@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import './css/Letter.css';
 import Button from './Button';
+import Image from './Image';
 
 type ButtonProps = {
   id: string
@@ -18,6 +19,7 @@ function Letter({
 }) {
   const [shouldRevealLetter, setShouldRevealLetter] = useState(false);
   const [extraButtons, setExtraButtons] = useState<ButtonProps[]>([]);
+  const [isMyValentine, setIsMyValentine] = useState(false);
 
   const spawnButtons = (
     e: React.MouseEvent<HTMLDivElement, MouseEvent>,
@@ -45,25 +47,37 @@ function Letter({
         setShouldRevealLetter(true);
       }}
     >
-      <h1 className='prompt'>Will you<br />be my<br />valentine?</h1>
+      {
+        isMyValentine ? (
+          <div className='valentine-container'>
+            <Image />
 
-      <div className='buttons'>
-        <Button isYes />
-        <Button onClick={(e) => spawnButtons(e, extraButtons.length)} />
-      </div>
+            <h1 className='message'>YAYY!!<br /> I love you!!</h1>
+          </div>
+        ) : (
+          <>
+            <h1 className='prompt'>Will you<br />be my<br />valentine?</h1>
 
-      {extraButtons.map((props) => (
-        <Button
-          isYes
-          key={props.id}
-          style={{
-            position: 'absolute',
-            left: `${props.x}px`,
-            top: `${props.y}px`
-          }}
-        />
-      ))}
+            <div className='buttons'>
+              <Button isYes onClick={() => setIsMyValentine(true)} />
+              <Button onClick={(e) => spawnButtons(e, extraButtons.length)} />
+            </div>
 
+            {extraButtons.map((props) => (
+              <Button
+                isYes
+                key={props.id}
+                onClick={() => setIsMyValentine(true)}
+                style={{
+                  position: 'absolute',
+                  left: `${props.x}px`,
+                  top: `${props.y}px`
+                }}
+              />
+            ))}
+          </>
+        )
+      }
     </div>
   );
 }
