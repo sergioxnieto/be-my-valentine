@@ -16,5 +16,6 @@
     aspect-ratio: 1/1;
     transform: rotate(-3deg);
     margin-bottom: 1rem;
+    object-fit: cover;
   }
 }
