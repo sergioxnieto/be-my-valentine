@@ -63,6 +63,14 @@ function Letter({
               <Button onClick={(e) => spawnButtons(e, extraButtons.length)} />
             </div>
 
+            <div className='image-container'>
+              <img
+                className='image'
+                alt='Milk and Mocha'
+                src='milk-shy.gif'
+              />
+            </div>
+
             {extraButtons.map((props) => (
               <Button
                 isYes
