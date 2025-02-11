@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/Envelope.css';
+import PostageStamp from './assets/valentines-postage-stamp.png';
 
 function Envelope({
   setIsEnvelopeClicked,
@@ -13,7 +14,7 @@ function Envelope({
       className={`envelope ${isLetterOpened ? 'opened' : ''}`}
       onClick={() => { setIsEnvelopeClicked(true) }}
     >
-      <img className="postage" src="valentines-postage-stamp.png" alt="Valentines themed postage stamp" />
+      <img className="postage" src={PostageStamp} alt="Valentines themed postage stamp" />
 
       <span className="opening">For Sarah</span>
     </div>

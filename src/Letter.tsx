@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import './css/Letter.css';
 import Button from './Button';
 import Image from './Image';
+import MilkShyGif from './assets/milk-shy.gif';
 
 type ButtonProps = {
   id: string
@@ -67,7 +68,7 @@ function Letter({
               <img
                 className='image'
                 alt='Milk and Mocha'
-                src='milk-shy.gif'
+                src={MilkShyGif}
               />
             </div>
 

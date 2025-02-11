@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Caveat Variable';
-  src: local('Caveat Variable'), url('../../public/Caveat-VariableFont_wght.ttf') format('truetype');
+  src: local('Caveat Variable'), url(../assets/Caveat-VariableFont_wght.ttf) format('truetype');
 }
 
 @keyframes openEnvelope {
