@@ -1,16 +1,22 @@
 {
   "files": {
     "main.css": "/be-my-valentine/static/css/main.2afe55e5.css",
-    "main.js": "/be-my-valentine/static/js/main.79963d2d.js",
+    "main.js": "/be-my-valentine/static/js/main.fef7eedd.js",
     "static/js/453.1092cb32.chunk.js": "/be-my-valentine/static/js/453.1092cb32.chunk.js",
+    "static/media/milk-shy.gif": "/be-my-valentine/static/media/milk-shy.ca6ecd4e75edb7006345.gif",
+    "static/media/duos-kiss-3.gif": "/be-my-valentine/static/media/duos-kiss-3.f081565f240a101db6d8.gif",
     "static/media/Caveat-VariableFont_wght.ttf": "/be-my-valentine/static/media/Caveat-VariableFont_wght.31f0a02d84d42627c894.ttf",
+    "static/media/duos-kiss-1.gif": "/be-my-valentine/static/media/duos-kiss-1.420b084e0a2ac95247f3.gif",
+    "static/media/valentines-postage-stamp.png": "/be-my-valentine/static/media/valentines-postage-stamp.ebf898ac7f51eef26087.png",
+    "static/media/duos-hug.gif": "/be-my-valentine/static/media/duos-hug.e279eb3701fe00b39ba1.gif",
+    "static/media/duos-kiss-2.gif": "/be-my-valentine/static/media/duos-kiss-2.9e455e80d23254312532.gif",
     "index.html": "/be-my-valentine/index.html",
     "main.2afe55e5.css.map": "/be-my-valentine/static/css/main.2afe55e5.css.map",
-    "main.79963d2d.js.map": "/be-my-valentine/static/js/main.79963d2d.js.map",
+    "main.fef7eedd.js.map": "/be-my-valentine/static/js/main.fef7eedd.js.map",
     "453.1092cb32.chunk.js.map": "/be-my-valentine/static/js/453.1092cb32.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2afe55e5.css",
-    "static/js/main.79963d2d.js"
+    "static/js/main.fef7eedd.js"
   ]
 }
